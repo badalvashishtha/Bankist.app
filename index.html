@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <section class="section section_1 hidden">
+      <header>
+        <div class="header_main">
+          <div class="heaader_left">
+            <p class="welcome_text">
+              Welcome back
+              <span class="user_first_name"> Badalvashishtha </span>
+            </p>
+          </div>
+          <div class="header_middle">
+            <p class="logo"><img class="logo_img" src="logo.png" /></p>
+          </div>
+          <div class="header_right">
+            <!-- <input class="login_username" type="text" placeholder="user" /> -->
+            <!-- <input class="login_password" type="password" placeholder="PIN" /> -->
+            <button class="logout_btn" type="submit">Logout</button>
+          </div>
+        </div>
+      </header>
+      <div class="login_body">
+        <main class="main">
+          <div class="balance">
+            <div class="text_for_balance">
+              <p>
+                Current balance<br>
+                <span class="date">As of 05/03/2023</span>
+              </p>
+            </div>
+            <div class="actual_amount">00<span>₹</span></div>
+          </div>
+          <div class="all_movements">
+            <div class="transaction_history_main">
+              <span>
+                <div class="transaction_name_amount">
+                  <div class="transaction-history DEPOSIT">
+                    <div class="about_transaction">Badal Vashishtha</div>
+                    <div class="transastion_amount">700₹</div>
+                  </div>
+                  <span class="transaction-date">15-03-2023</span>
+                </div>
+                <div class="transaction_name_amount">
+                  <div class="transaction-history WITHDRAWAL">
+                    <div class="about_transaction">Umakant</div>
+                    <div class="transastion_amount">-700₹</div>
+                  </div>
+                  <span class="transaction-date">01-03-2023</span>
+                </div>
+                <div class="transaction_name_amount">
+                  <div class="transaction-history WITHDRAWAL">
+                    <div class="about_transaction">Badal Vashishtha</div>
+                    <div class="transastion_amount">-700₹</div>
+                  </div>
+                  <span class="transaction-date">12-12-2022</span>
+                </div>
+                <div class="transaction_name_amount">
+                  <div class="transaction-history DEPOSIT">
+                    <div class="about_transaction">Badal Vashishtha</div>
+                    <div class="transastion_amount">700₹</div>
+                  </div>
+                  <span class="transaction-date">19-10-2022</span>
+                </div>
+              </span>
+            </div>
+            <div class="other_movements">
+              <div class="transfer_money">
+                <div class="text_for_transfer">Transfer Money</div>
+                <div class="transfer_details">
+                  <input class="transfer_to" type="text" placeholder="User" />
+                  <input
+                    class="transfer_amount"
+                    type="number"
+                    placeholder="Amount"
+                  />
+                  <br />
+                  <button class="transfer_button">Transfer</button>
+                </div>
+              </div>
+              <div class="request_loan">
+                <div class="text_for_loan">Request Loan</div>
+                <div class="loan_details">
+                  <input
+                    class="loan_amount"
+                    type="number"
+                    placeholder="Amount"
+                  /><br />
+                  <button class="loan_button">Send</button>
+                </div>
+              </div>
+              <div class="close_account">
+                <div class="text_for_close_account">Close Account</div>
+                <div class="closing_details">
+                  <input
+                    class="closing_id"
+                    type="text"
+                    placeholder="Confirm id"
+                  />
+                  <input
+                    class="closing_id_pin"
+                    type="password"
+                    placeholder="PIN"
+                  />
+                  <br />
+                  <button class="close_account_button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="total_balance_movement">
+            <!-- <div class="sort_transaction">&downarrow; SORT</div> -->
+            <div class="total_deposit">
+              IN: <span class="total_deposit_value">1400</span>₹
+            </div>
+            <div class="tolal_withdrawal">
+              OUT: <span class="total_withdrawal_value">-1400</span>₹
+            </div>
+            <div class="total_interest">
+              INTEREST: <span class="total_interest_value">00</span>₹
+            </div>
+          </div>
+          <div class="logout_time_text">
+            <!-- <div class="logout_time">You will be logged out in 05:00</div> -->
+          </div>
+        </footer>
+      </div>
+    </section>
+    <section class="section section_2 ">
+      <header>
+        <div class="login_info_header">
+          <div class="heaader_left">
+            <p class="login_info_header_text">Login to get started</p>
+          </div>
+          <div class="header_middle">
+            <p class="logo"><img class="logo_img" src="logo.png" /></p>
+          </div>
+          <div class="header_right">
+            <div class="about_bankist_1">How it works ↓</div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="login_info">
+          <div class="account_info">
+            <div>
+              <span class="login_info_titles">Username</span><br />
+              <input class="login_username login_username_info" type="text" placeholder="first latter of first and last name" />
+            </div>
+            <div>
+              <span class="login_info_titles">Password</span><br />
+              <input class="login_password login_password_info" type="password" minlength="4" maxlength="4" placeholder="PIN" />
+            </div>
+            <div>
+              <button class="submit submit_info" type="submit">Login</button>
+            </div>
+            <div>
+              <hr />
+              <button class="creating_new_account">Create New Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+    </section>
+    <section class="section section_3  hidden">
+      <div class="create_new_account">
+        <header>
+          <div class="login_info_header">
+            <div class="heaader_left">
+              <p class="login_info_header_text">Login to get started</p>
+            </div>
+            <div class="header_middle">
+              <p class="logo"><img class="logo_img" src="logo.png" /></p>
+            </div>
+            <div class="header_right">
+              <div class="about_bankist_2">How it works ↓</div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="login_info">
+            <div class="account_info">
+              <div>
+                <span class="login_info_titles new_account_first_name_info">Enter First Name</span><br />
+                <input class="login_username_info new_account_first_name" type="text" placeholder="First Name"  required/><br>
+                <span class="login_info_titles new_account_last_name_info">Enter Last Name</span><br />
+                <input class="login_username_info new_account_last_name" type="text" placeholder="Last Name"  required/>
+              </div>
+              <div>
+                <span class="login_info_titles new_account_password_info">Create Pin </span><br />
+                <input class="login_password_info new_account_password" maxlength="4" minlength="4" type="text"  placeholder="4 DIGIT NUMBER" required/>
+              </div> 
+              <div>
+                <span class="login_info_titles new_account_interestrate_info">Enter Your Interest Rate</span><br />
+                <input class=" login_password_info new_account_interestrate" type="text" placeholder="0-10%" required/>
+              </div> 
+              <div>
+                <button class="submit_info new_account_created" type="submit">Create</button>
+              </div>
+              <div>
+                <hr>
+                <button class="home_page" type="submit">← Home Page</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        </main>
+      </div>
+    </section>
+    <section class="section section_4 hidden">
+      <div class="login_errors">
+        <div class="close_login_error"><button class="close_login_error_btn">	&#215;</button></div>
+        <div class="login_error_massage A1 hidden" id="errorA1"> <p> please fill all the entries.
+        </p></div>
+        <div class="login_error_massage A2 hidden" id="errorA2"> <p> Please Enter another 4 DIGITS password.
+        </p></div>
+        <div class="login_error_massage A3 hidden" id="errorA3"> <p> please take a look again and fill entries correct.
+        </p></div>
+        <div class="login_error_massage A4 hidden" id="errorA4"> <p> invalid details please try again.
+        </p></div>
+      </div>
+    </section>
+    
+    <section class="section section_5 hidden">
+      <div class="how_it_works">
+        <div class="close_how_it_works"><button class="close_how_it_works_button">	&#215;</button></div>
+        <div class="heading_how_it_works">
+          HOW IS WORKS ?
+        </div>
+        <div class="how_it_works_text"><p>
+          we have 5 dummy account already <br>
+          1. Username: js, pin: 1111 <br>  
+          2. Username: jd, pin: 2222  <br>
+          3. Username: bv, pin: 3333  <br>
+          4. Username: ss, pin: 4444  <br>
+          5. Username: uv, pin: 9999 <br>
+          You can try with these accounts or creat new. <br> if you wants to create new account then first latter of both firstname and lastname wil be your USERNAME.
+           <br> PIN must be a FOUR DIGIT NUMBER. <br>
+           Interest Rate must be a number between 1 to 10. <br>
+
+        </p> </div>
+      </div>
+    </section>
+  
+
+    <script src="app.js"></script>
+  </body>
+</html>

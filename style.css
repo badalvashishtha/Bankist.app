@@ -1,0 +1,365 @@
+body {
+  margin: 0px;
+  background-color: rgb(223, 223, 223);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header_main,
+.login_info_header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  font-size: 20px;
+  height: 70px;
+  background-color: rgb(164, 135, 135);
+  text-align: center;
+}
+.heaader_left {
+  font-size: 18px;
+  padding: 4px;
+  /* padding: 0px; */
+}
+.login_info_header {
+  background-color: rgb(198, 162, 162);
+  padding: 4px;
+}
+
+.logo {
+  margin: 0px;
+  text-align: center;
+}
+.logo_img {
+  height: 60px;
+}
+.header_right {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  padding-right: 3px;
+}
+.account_info {
+  /* background-color: rgb(213, 177, 177); */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  align-items: center;
+  padding-top: 70px;
+}
+.login_info_titles {
+  text-align: start;
+  padding-left: 30px;
+  margin-bottom: 0px;
+}
+/* 
+.login_username,
+.login_password {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  border: white;
+  border-radius: 25px;
+  text-align: center;
+} */
+.login_password_info,
+.login_username_info {
+  width: 250px;
+  height: 40px;
+  margin: 5px;
+  border: white;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logout_btn {
+  background: none;
+  width: 70px;
+  height: 40px;
+  background-color: rgb(196, 196, 196);
+  border: none;
+  border-radius: 10px;
+}
+.submit_info {
+  margin-bottom: 20px;
+  width: 150px;
+  background: none;
+  height: 30px;
+  background-color: rgb(196, 196, 196);
+  border: none;
+  border-radius: 10px;
+}
+.about_bankist_1,
+.about_bankist_2 {
+  /* margin-bottom: 20px; */
+  width: 150px;
+  background: none;
+  height: 30px;
+  background-color: rgb(196, 196, 196);
+  border: none;
+  border-radius: 10px;
+}
+
+.creating_new_account,
+.home_page {
+  background: none;
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  /* background-color: rgb(138, 133, 191); */
+  background-color: rgb(196, 196, 196);
+  border: none;
+  border-radius: 10px;
+}
+.creating_new_account:active,
+.home_page:active {
+  background-color: rgb(167, 172, 177);
+}
+
+.submit:active {
+  background-color: rgb(216, 214, 214);
+}
+.submit_info:active {
+  background-color: rgb(167, 172, 177);
+}
+.login_body {
+  padding: 0px;
+  opacity: 0;
+}
+.main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.text_for_balance {
+  padding-bottom: 0px;
+}
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.date {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.actual_amount {
+  font-size: 44px;
+}
+.all_movements {
+  /* margin: 1px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.transaction_history_main {
+  display: flex;
+  flex-direction: column;
+  /* width: 70%; */
+  width: 600px;
+  background-color: white;
+  height: 400px;
+  overflow-y: auto;
+}
+.transaction_name_amount {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.transaction-history {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 2px;
+  font-size: 20px;
+}
+.transaction-date {
+  padding-left: 20px;
+  padding-bottom: 2px;
+}
+
+.transaction-history.WITHDRAWAL {
+  color: rgb(157, 73, 73);
+  /* background-color: rgb(157, 73, 73); */
+}
+
+.transaction-history.DEPOSIT {
+  color: rgb(55, 162, 62);
+}
+
+.transaction-history .about_transaction {
+  color: black;
+}
+
+.other_movements {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  /* width: 30; */
+  width: 400px;
+  height: 400px;
+}
+.about_transaction {
+  /* background-color: rgb(157, 73, 73); */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  /* color: aliceblue; */
+}
+.transaction-date {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.transfer_money,
+.request_loan,
+.close_account {
+  padding-top: 10px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  border: solid none;
+  background-color: rgb(255, 191, 53);
+  border-radius: 10px;
+  height: 360px;
+  margin-left: 10px;
+}
+.transfer_money {
+  margin-bottom: 5px;
+}
+.request_loan {
+  margin-bottom: 5px;
+}
+.text_for_close_account {
+  color: white;
+}
+.transfer_to,
+.transfer_amount,
+.loan_amount,
+.closing_id,
+.closing_id_pin {
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  width: 95px;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.transfer_to,
+.transfer_amount {
+  background-color: rgb(243, 243, 165);
+}
+.request_loan {
+  background-color: rgb(86, 221, 86);
+}
+.loan_amount {
+  background-color: rgb(191, 248, 191);
+}
+.close_account {
+  background-color: rgb(184, 58, 58);
+}
+.closing_id,
+.closing_id_pin {
+  background-color: rgb(255, 201, 201);
+}
+.transfer_button,
+.loan_button,
+.close_account_button {
+  border: none;
+  border-radius: 4px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 10px;
+}
+.transfer_button:active,
+.loan_button:active,
+.close_account_button:active {
+  background-color: rgb(228, 226, 226);
+}
+.total_balance_movement {
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+.logout_time {
+  padding-right: 10px;
+  text-align: right;
+}
+.total_deposit_value {
+  color: rgb(193, 29, 29);
+  font: 1.1em sans-serif;
+}
+.total_withdrawal_value {
+  color: forestgreen;
+  font: 1.1em sans-serif;
+}
+.total_interest_value {
+  color: rgb(51, 71, 198);
+  font: 1.1em sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+.login_errors,
+.how_it_works {
+  position: absolute;
+  top: 200px;
+  /* align-items: center; */
+  left: 0;
+  right: 0;
+  /* margin-top: 0px; */
+  background-color: cadetblue;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px;
+}
+
+.close_login_error {
+  /* position: relative; */
+  text-align: end;
+}
+.close_how_it_works_button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: cadetblue;
+  border: none;
+  font-size: 30px;
+}
+.close_login_error_btn {
+  border: none;
+  font-size: 30px;
+  background-color: cadetblue;
+}
+
+.login_error_massage {
+  /* width: 100%; */
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  /* padding-top: 30px; */
+  /* padding-bottom: 45px; */
+  margin-bottom: 45px;
+}
+.how_it_works {
+  position: absolute;
+  top: 150px;
+}
+.how_it_works_text {
+  padding-top: 0px;
+  padding: 10px;
+}
+.heading_how_it_works {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-size: 25px;
+}
